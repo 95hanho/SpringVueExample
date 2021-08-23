@@ -23,7 +23,7 @@ public class VirtualController {
 	
 	// bean등록된 비밀번호암호화 클래스
 	@Autowired
-	private PasswordEncoder passwordEncoder;
+	private PasswordEncoder passwordEncoder; 
 	
 	// 로그인
 	@PostMapping("/api/login")

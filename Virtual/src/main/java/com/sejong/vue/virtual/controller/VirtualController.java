@@ -2,8 +2,6 @@ package com.sejong.vue.virtual.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +9,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sejong.vue.model.User;
@@ -98,7 +95,7 @@ public class VirtualController {
 		return result;
 	}
 	
-	// 멘트 업데이트
+	// 멘트 수정
 	@PostMapping("/api/virtual/virtualupdate")
 	public Map<String, Object> virtualupdate(@RequestBody Map<String, Virtualnum> list){
 		Map<String, Object> result = new HashMap<String, Object>();

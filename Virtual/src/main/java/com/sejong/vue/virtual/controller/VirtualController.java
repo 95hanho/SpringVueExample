@@ -18,7 +18,6 @@ import com.sejong.vue.virtual.service.VirtualService;
 @RestController
 public class VirtualController {
 	
-	// 테스트
 	@Autowired
 	private VirtualService vtService;
 	
